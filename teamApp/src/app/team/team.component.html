@@ -1,0 +1,10 @@
+<div class="teams-container">
+    <div class="team-container">
+        <h3>TEAM {{index + 1}}</h3>
+        <ul>
+        @for(member of team; track member){
+            <li>{{ member | titlecase }}</li>
+        }
+        </ul>
+    </div>
+</div>
